@@ -1,0 +1,9 @@
+def count_holes(list):
+    d={'A':1,'B':2,'D':1,'O':1,'P':1,'Q':1,'R':1}
+    total_holes=0
+    for i in list:
+        if i in d:
+            total_holes+=d[i]
+    return total_holes
+
+print(count_holes(['D','j','K','O']))

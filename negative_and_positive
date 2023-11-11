@@ -1,0 +1,17 @@
+def negative_and_positive(arr):
+    i=0
+    j=i+1
+    while(j<len(arr)):
+        if(arr[j]<0) :
+            arr[i],arr[j]=arr[j],arr[i]
+            i+=1
+            j+=1
+        else:
+            
+            j+=1
+    return arr
+
+arr=[9,-3,5,-2,-8,-6,1,3]
+arr2=[-3,3,-2,2]
+print(negative_and_positive(arr2))
+            

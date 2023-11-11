@@ -1,0 +1,19 @@
+def company_name_extraction(email):
+    
+    for i in range(len(email)):
+        if(email[i]=='@'):
+            company_name=email[i+1:-4]
+    return company_name
+    
+
+    # while(email[i]!='@'):
+    #     i+=1
+    # i+=1
+    # 
+    # for j in range(i,len(email)):
+    #     if(email[j]=='.'):
+    #         break
+    #     company_name+=email[j]
+    # return company_name
+
+print(company_name_extraction('shubham@Google.com'))

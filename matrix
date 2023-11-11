@@ -1,0 +1,13 @@
+def matrix(mat):
+    for i in range(len(mat)):
+        size=len(mat[i])
+        for j in range(i+1,size):
+            mat[i][j]=0
+
+    return mat
+
+mat=[[2,3,4],[5,6,7],[6,7,5]]
+print(matrix(mat))
+
+
+            

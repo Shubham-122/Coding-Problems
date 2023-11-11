@@ -1,0 +1,5 @@
+def reverse_the_string(s):
+    ss=s[len(s)-1:0:-1]
+    return ss
+
+print(reverse_the_string("TdsSssssssc cdd"))
